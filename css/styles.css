@@ -78,6 +78,8 @@ button {
   padding-right: 15px;
 }
 
+/* --------------------------Navigation----------------------------- */
+
 .header-wrap {
   border-bottom: 1px solid #ececec;
 }
@@ -121,8 +123,6 @@ button {
 .accent {
   color: var(--accent-color);
 }
-
-/* Navigation */
 
 .site-nav .link {
   display: block;
@@ -180,7 +180,7 @@ button {
   fill: currentColor;
 }
 
-/* Hero */
+/* ---------------------------------HERO----------------------------- */
 
 .hero {
   padding-top: 200px;
@@ -249,7 +249,7 @@ button {
   background-color: var(--primary-white-color);
 }
 
-/* Section */
+/* -----------------------------Features----------------------------- */
 
 .features {
   padding-top: 94px;
@@ -317,13 +317,11 @@ button {
   margin-right: 30px;
 }
 
-/* Features */
-
 .features-items .title {
   color: var(--primary-text-color);
 }
 
-/* Members */
+/* ------------------------------Members----------------------------- */
 
 .members-wrap {
   padding-top: 94px;
@@ -368,6 +366,8 @@ button {
   text-align: center;
 }
 
+/* ----------------------------SOCIALS------------------------ */
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -407,6 +407,8 @@ button {
 .social-item:focus .social-icon {
   fill: var(--primary-white-color);
 }
+
+/* --------------------------CLIENTS--------------------------- */
 
 .clients {
   padding-top: 94px;
@@ -457,7 +459,7 @@ button {
   fill: var(--accent-color);
 }
 
-/* Footer */
+/* --------------------------Footer------------------------------ */
 
 .page-footer .footer-wrap {
   display: flex;
@@ -505,12 +507,13 @@ button {
   font-style: normal;
 }
 
+/* -------------------------COMMUNITY--------------------------- */
+
 .community {
   min-width: 206px;
   margin-top: 12px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .community-title {
@@ -597,17 +600,29 @@ button {
   cursor: pointer;
 }
 
-/* Heading Portfolio */
+/* ------------------- Heading Portfolio --------------------------*/
 
 .examples-items {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .examples-items .item {
-  width: 370px;
+  width: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
+
+/* .examples-items .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.examples-items .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
 
 .examples-items .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -619,14 +634,6 @@ button {
 
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-
-.examples-items .item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.examples-items .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
 }
 
 .image {
