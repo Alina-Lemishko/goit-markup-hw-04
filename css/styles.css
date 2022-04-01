@@ -404,10 +404,9 @@ button {
 }
 
 .social-item:hover .social-icon,
-.social-item:focus .social-icon {
+.social-link:focus .social-icon {
   fill: var(--primary-white-color);
 }
-
 /* --------------------------CLIENTS--------------------------- */
 
 .clients {
@@ -451,7 +450,7 @@ button {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-link:hover .clients-icon,
